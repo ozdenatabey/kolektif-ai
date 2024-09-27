@@ -1,9 +1,10 @@
 import {
   Bars3CenterLeftIcon,
-  MapIcon,
+  MapPinIcon,
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
+import imgUrl from "../assets/logo.png";
 
 export default function Navbar() {
   return (
@@ -25,7 +26,8 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="no-animation cursor-pointer text-xl font-bold">
+        <a className="no-animation cursor-pointer text-2xl font-bold flex items-center">
+          <img src={imgUrl} alt="logo" className="h-10 mr-2" />
           Kolektif AI
         </a>
       </div>
@@ -52,7 +54,7 @@ export default function Navbar() {
               <h3 className="card-title mb-2">İletişim Kanallarımız</h3>
               <div className="flex items-start text-lg my-2">
                 <div>
-                  <MapIcon className="size-8 mr-2" />
+                  <MapPinIcon className="size-7 mr-2 text-neutral" />
                 </div>
                 <a href="https://maps.app.goo.gl/h9CUaZXFiT3uLZGi8">
                   Yakacık Çarşı Mah, Kartal Cd No:90/92, 34876 Kartal/İstanbul
@@ -60,13 +62,13 @@ export default function Navbar() {
               </div>
               <div className="flex items-start text-lg my-2">
                 <div>
-                  <PhoneIcon className="size-8 mr-2" />
+                  <PhoneIcon className="size-7 mr-2 text-neutral" />
                 </div>
                 <a href="tel:+902123346976">+902123346976</a>
               </div>
               <div className="flex items-start text-lg my-2">
                 <div>
-                  <EnvelopeIcon className="size-8 mr-2" />
+                  <EnvelopeIcon className="size-7 mr-2 text-neutral" />
                 </div>
                 <a href="mailto:makinahangar@mmo.org.tr">
                   makinahangar@mmo.org.tr
