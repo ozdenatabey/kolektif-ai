@@ -9,7 +9,7 @@ import imgUrl from "../assets/logo.png";
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
-      <div className="navbar-start mx-6">
+      <div className="navbar-start md:mx-6">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <Bars3CenterLeftIcon className="size-6" />
@@ -26,8 +26,8 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="no-animation cursor-pointer text-2xl font-bold flex items-center">
-          <img src={imgUrl} alt="logo" className="h-10 mr-2" />
+        <a className="no-animation cursor-pointer md:text-2xl font-bold flex items-center">
+          <img src={imgUrl} alt="logo" className="h-8 md:h-10 mr-2" />
           Kolektif AI
         </a>
       </div>
@@ -41,14 +41,14 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end mx-6">
+      <div className="navbar-end md:mx-6">
         <div className="dropdown dropdown-bottom dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-outline text-lg">
             Bize Ulaşın
           </div>
           <div
             tabIndex={0}
-            className="dropdown-content dropdown-end card card-compact bg-base-200 text-primary-content z-[1] w-96 p-2 shadow-lg mt-2 border-l-4 border-neutral"
+            className="dropdown-content dropdown-end card card-compact bg-base-200 text-primary-content z-[1] w-80 md:w-96 p-2 shadow-lg mt-2 border-l-4 border-neutral"
           >
             <div className="card-body">
               <h3 className="card-title mb-2">İletişim Kanallarımız</h3>

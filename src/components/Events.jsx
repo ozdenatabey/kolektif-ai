@@ -2,12 +2,20 @@ import { events } from "../data/eventData";
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 
 function Events() {
+  const colCountLg = events.length > 2 ? 3 : events.length;
+  const colCountMd = events.length > 1 ? 2 : events.length;
   return (
     <div>
-      <p className="text-xl font-bold text-center underline underline-offset-8 decoration-error my-6">
+      <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error my-6">
         Yaklaşan Etkinlikler
       </p>
-      <div className="grid gap-8 m-auto lg:w-[76rem] lg:grid-cols-3 md:w-[50rem] md:grid-cols-2 sm:w-[24rem]">
+      <div
+        className={`grid gap-8 m-auto lg:w-[${
+          colCountLg * 24 + (colCountLg - 1) * 2
+        }rem] lg:grid-cols-${colCountLg} md:w-[${
+          colCountMd * 24 + (colCountMd - 1) * 2
+        }rem] md:grid-cols-${colCountMd} sm:w-[24rem]`}
+      >
         {events.map((event) => (
           <div key={event.id} className="">
             <div className="card bg-base-100 w-96 h-full border border-neutral-content hover:shadow-xl hover:scale-[102%] transition ease-in-out">
