@@ -1,26 +1,29 @@
-import { events } from "../data/eventData";
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
+import { events } from "../data/eventData";
+import { gridCalc } from "../data/GridCalc";
 
 function Events() {
-  const colCountLg = events.length > 2 ? 3 : events.length;
-  const colCountMd = events.length > 1 ? 2 : events.length;
+  console.log(gridCalc.colCountLg);
+
   return (
     <div>
       <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error my-6">
         Yaklaşan Etkinlikler
       </p>
       <div
-        className={`grid gap-8 m-auto lg:w-[${
-          colCountLg * 24 + (colCountLg - 1) * 2
-        }rem] lg:grid-cols-${colCountLg} md:w-[${
-          colCountMd * 24 + (colCountMd - 1) * 2
-        }rem] md:grid-cols-${colCountMd} sm:w-[24rem]`}
+        className={`grid gap-8 m-auto lg:${gridCalc.colWidthLg} lg:${gridCalc.colCountLg} md:${gridCalc.colWidthMd} md:${gridCalc.colCountMd} sm:w-[24rem]`}
       >
         {events.map((event) => (
           <div key={event.id} className="">
-            <div className="card bg-base-100 w-96 h-full border border-neutral-content hover:shadow-xl hover:scale-[102%] transition ease-in-out">
+            <div className="card bg-base-100 w-96 h-full border border-neutral-content shadow-xl">
               <figure className="h-48">
-                <img src={event.img} alt="event-img" />
+                <div className="backdrop-grayscale">
+                  <img
+                    src={event.img}
+                    alt="event-img"
+                    className=" hover:scale-110 transition ease-in-out"
+                  />
+                </div>
               </figure>
               <div className="m-4">
                 <h2 className="card-title border-b-2 border-neutral">

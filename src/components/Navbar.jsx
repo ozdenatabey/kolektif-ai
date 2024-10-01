@@ -56,7 +56,10 @@ export default function Navbar() {
                 <div>
                   <MapPinIcon className="size-7 mr-2 text-neutral" />
                 </div>
-                <a href="https://maps.app.goo.gl/h9CUaZXFiT3uLZGi8">
+                <a
+                  href="https://maps.app.goo.gl/h9CUaZXFiT3uLZGi8"
+                  target="_blank"
+                >
                   Yakacık Çarşı Mah, Kartal Cd No:90/92, 34876 Kartal/İstanbul
                 </a>
               </div>
