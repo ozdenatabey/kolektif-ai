@@ -16,7 +16,7 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content bg-base-100 rounded-box font-semibold z-[1] mt-3 p-2 shadow w-80"
+            className="menu menu-lg dropdown-content bg-base-200 rounded-box font-semibold z-[1] mt-3 p-2 shadow w-80 border-l-4 border-neutral"
           >
             <li>
               <a>Etkinlikler</a>
