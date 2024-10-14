@@ -2,20 +2,12 @@ import { PencilSquareIcon } from "@heroicons/react/24/outline";
 import { events } from "../data/eventData";
 import { gridCalc } from "../data/GridCalc";
 // import RegisterForm from "./RegisterForm";
-import { Formik, Form, ErrorMessage, Field } from "formik";
+import { Formik, Form, Field } from "formik";
 
 function Events() {
-  const initialValues = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    age: "",
-    course: "",
-  };
   const onSubmit = (values) => {
-    // alert(JSON.stringify(values, null, 2));
-    console.log(values);
+    alert(JSON.stringify(values, null, 2));
+    // console.log(values);
   };
 
   return (
@@ -72,17 +64,25 @@ function Events() {
             </div>
             <dialog id={event.id} className="modal m-auto">
               <div className="modal-box">
-                <Formik initialValues={initialValues} onSubmit={onSubmit}>
+                <form method="dialog">
+                  <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                    ✕
+                  </button>
+                </form>
+                <Formik
+                  initialValues={{
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    phone: "",
+                    age: "",
+                    course: event.name,
+                  }}
+                  onSubmit={onSubmit}
+                >
                   {() => (
                     <Form>
-                      <p
-                        className="font-bold text-lg mb-5"
-                        name="course"
-                        value={event.name}
-                        id={event.id}
-                      >
-                        {event.name}
-                      </p>
+                      <p className="font-bold text-lg mb-5">{event.name}</p>
                       <label htmlFor="firstName">Ad</label>
                       <Field
                         name="firstName"
@@ -108,9 +108,14 @@ function Events() {
                         name="age"
                         className="input input-bordered w-full mb-2"
                       />
-                      <button className="btn btn-neutral" type="submit">
-                        Gönder
-                      </button>
+                      <div className="flex justify-center space-x-2">
+                        <button className="btn btn-ghost" type="reset">
+                          Temizle
+                        </button>
+                        <button className="btn btn-neutral" type="submit">
+                          Gönder
+                        </button>
+                      </div>
                     </Form>
                   )}
                 </Formik>
