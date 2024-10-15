@@ -16,7 +16,7 @@ function Events() {
           <div key={event.id} className="">
             <div className="card bg-base-100 w-96 h-full border border-neutral-content shadow-xl">
               <figure className="h-48">
-                <div className="backdrop-grayscale">
+                <div>
                   <img
                     src={event.img}
                     alt="event-img"
