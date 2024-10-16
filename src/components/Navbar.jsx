@@ -14,12 +14,16 @@ export default function Navbar() {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <Bars3CenterLeftIcon className="size-6" />
           </div>
+
           <ul
             tabIndex={0}
             className="menu menu-lg dropdown-content bg-base-200 rounded-box font-semibold z-[1] mt-3 p-2 shadow w-80 border-l-4 border-neutral"
           >
             <li>
               <a>Etkinlikler</a>
+            </li>
+            <li>
+              <a>Hakkımızda</a>
             </li>
             <li>
               <a>Haberler</a>
@@ -35,6 +39,9 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1 font-semibold text-lg">
           <li>
             <a>Etkinlikler</a>
+          </li>
+          <li>
+            <a>Hakkımızda</a>
           </li>
           <li>
             <a>Haberler</a>

@@ -3,6 +3,7 @@ import Events from "./components/Events";
 import About from "./components/About";
 import { StopIcon } from "@heroicons/react/24/solid";
 import News from "./components/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <StopIcon className="size-8" />
       </div>
       <News />
+      <Footer />
     </>
   );
 }
