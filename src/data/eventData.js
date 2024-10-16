@@ -1,3 +1,8 @@
+import event1Img from "/src/assets/event-1.jpg";
+import event2Img from "/src/assets/event-2.jpg";
+import event3Img from "/src/assets/event-3.jpg";
+import event4Img from "/src/assets/event-4.jpg";
+
 // UNIQUE ID ÜRETME ALGORİTMASI, BUNU KAYIT ALIRKEN KULLAN
 function generateUUID() {
   return "xxxxxxxx".replace(/[xy]/g, function (c) {
@@ -11,7 +16,7 @@ export const events = [
   {
     id: generateUUID(),
     name: "Uygulamalı Veri Bilimi Projesi",
-    img: "/src/assets/event-1.jpg",
+    img: event1Img,
     date: "28 Eylül",
     timeRange: "13:00-16:00",
     constructor: "Seda Yeşilkapa",
@@ -20,7 +25,7 @@ export const events = [
   {
     id: generateUUID(),
     name: "Büyük Dil Modellerine Giriş Eğitimi",
-    img: "/src/assets/event-2.jpg",
+    img: event2Img,
     date: "5 Ekim",
     timeRange: "13:00-16:00",
     constructor: "Halit Efe Tanrıkulu",
@@ -29,7 +34,7 @@ export const events = [
   {
     id: generateUUID(),
     name: "Uygulamalı Algoritmanın Temelleri",
-    img: "/src/assets/event-3.jpg",
+    img: event3Img,
     date: "17 Kasım",
     timeRange: "13:00-16:00",
     constructor: "Bedirhan Bosna",
@@ -38,7 +43,7 @@ export const events = [
   {
     id: generateUUID(),
     name: "Nesne Tabanlı Programlamaya Giriş - JAVA",
-    img: "/src/assets/event-4.jpg",
+    img: event4Img,
     date: "1 Aralık",
     timeRange: "13:00-16:00",
     constructor: "Özden Atabey",
