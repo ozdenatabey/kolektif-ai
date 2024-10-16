@@ -5,8 +5,8 @@ import RegisterForm from "./RegisterForm";
 
 function Events() {
   return (
-    <div>
-      <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error mt-24 mb-6">
+    <div id="events">
+      <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error mt-4 mb-6">
         Yaklaşan Etkinlikler
       </p>
       <div

@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Events from "./components/Events";
 import About from "./components/About";
-import { StopIcon } from "@heroicons/react/24/solid";
 import News from "./components/News";
 import Footer from "./components/Footer";
+import { StopIcon } from "@heroicons/react/24/solid";
 
 function App() {
   return (

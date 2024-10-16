@@ -2,7 +2,7 @@ import { news } from "../data/eventData";
 
 function News() {
   return (
-    <div>
+    <div id="news">
       <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error my-6">
         Haberler
       </p>

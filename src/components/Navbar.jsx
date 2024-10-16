@@ -5,10 +5,17 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/solid";
 import imgUrl from "../assets/logo.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navbar() {
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
-    <div className="navbar bg-base-100 fixed z-10 top-0 shadow-md">
+    <div className="navbar bg-base-100 sticky z-10 top-0 shadow-md">
       <div className="navbar-start md:mx-6">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,31 +27,50 @@ export default function Navbar() {
             className="menu menu-lg dropdown-content bg-base-200 rounded-box font-semibold z-[1] mt-3 p-2 shadow w-80 border-l-4 border-neutral"
           >
             <li>
-              <a>Etkinlikler</a>
+              <Link scroll={(el) => scrollWithOffset(el)} to="/#events">
+                Etkinlikler
+              </Link>
             </li>
             <li>
-              <a>Hakkımızda</a>
+              <Link scroll={(el) => scrollWithOffset(el)} to="/#about">
+                Hakkımızda
+              </Link>
             </li>
             <li>
-              <a>Haberler</a>
+              <Link scroll={(el) => scrollWithOffset(el)} to="/#news">
+                Haberler
+              </Link>
             </li>
           </ul>
         </div>
-        <a className="no-animation cursor-pointer md:text-2xl font-bold flex items-center">
-          <img src={imgUrl} alt="logo" className="h-8 md:h-10 mr-2" />
-          Kolektif AI
-        </a>
+        <Link
+          scroll={(el) =>
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+          to="/#top"
+        >
+          <a className="no-animation cursor-pointer md:text-2xl font-bold flex items-center">
+            <img src={imgUrl} alt="logo" className="h-8 md:h-10 mr-2" />
+            Kolektif AI
+          </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold text-lg">
           <li>
-            <a>Etkinlikler</a>
+            <Link scroll={(el) => scrollWithOffset(el)} to="/#events">
+              Etkinlikler
+            </Link>
           </li>
           <li>
-            <a>Hakkımızda</a>
+            <Link scroll={(el) => scrollWithOffset(el)} to="/#about">
+              Hakkımızda
+            </Link>
           </li>
           <li>
-            <a>Haberler</a>
+            <Link scroll={(el) => scrollWithOffset(el)} to="/#news">
+              Haberler
+            </Link>
           </li>
         </ul>
       </div>
