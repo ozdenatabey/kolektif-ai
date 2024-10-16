@@ -1,6 +1,6 @@
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 import { events } from "../data/eventData";
-import { gridCalc } from "../data/GridCalc";
+import { gridCalc } from "../data/GridCalc.js";
 import RegisterForm from "./RegisterForm";
 
 function Events() {
