@@ -19,7 +19,7 @@ function Events() {
                 <div>
                   <img
                     src={event.img}
-                    alt="event-img"
+                    alt={event.img}
                     className=" hover:scale-110 transition ease-in-out"
                   />
                 </div>

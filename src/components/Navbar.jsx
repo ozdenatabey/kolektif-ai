@@ -18,7 +18,12 @@ export default function Navbar() {
     <div className="navbar bg-base-100 sticky z-10 top-0 shadow-md">
       <div className="navbar-start md:mx-6">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            aria-label="side-menu"
+          >
             <Bars3CenterLeftIcon className="size-6" />
           </div>
 

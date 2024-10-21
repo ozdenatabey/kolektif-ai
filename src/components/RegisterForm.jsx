@@ -70,63 +70,73 @@ export default function RegisterForm({ event }) {
             <Toaster />
             <Form>
               <p className="font-bold text-lg mb-5">{event.name}</p>
-              <div className="flex justify-between items-end">
-                <label htmlFor="firstName">Ad</label>
-                <div className="text-error text-sm">
+              <div className="relative">
+                <label htmlFor="firstName">
+                  Ad
+                  <Field
+                    name="firstName"
+                    className="input input-bordered w-full mb-2"
+                  />
+                </label>
+                <div className="text-error text-sm absolute top-1 right-0">
                   <ErrorMessage name="firstName" />
                 </div>
               </div>
-              <Field
-                name="firstName"
-                className="input input-bordered w-full mb-2"
-              />
 
-              <div className="flex justify-between items-end">
-                <label>Soyad</label>
-                <div className="text-error text-sm">
+              <div className="relative">
+                <label>
+                  Soyad
+                  <Field
+                    name="lastName"
+                    className="input input-bordered w-full mb-2"
+                  />
+                </label>
+                <div className="text-error text-sm absolute top-1 right-0">
                   <ErrorMessage name="lastName" />
                 </div>
               </div>
-              <Field
-                name="lastName"
-                className="input input-bordered w-full mb-2"
-              />
 
-              <div className="flex justify-between items-end">
-                <label>E-mail</label>
-                <div className="text-error text-sm">
+              <div className="relative">
+                <label>
+                  E-mail
+                  <Field
+                    name="email"
+                    className="input input-bordered w-full mb-2"
+                  />
+                </label>
+                <div className="text-error text-sm absolute top-1 right-0">
                   <ErrorMessage name="email" />
                 </div>
               </div>
-              <Field
-                name="email"
-                className="input input-bordered w-full mb-2"
-              />
 
-              <div className="flex justify-between items-end">
-                <label>Telefon</label>
-                <div className="text-error text-sm">
+              <div className="relative">
+                <label>
+                  Telefon
+                  <Field
+                    placeholder="başında 0 olmadan giriniz: (5xx)"
+                    type="number"
+                    name="phone"
+                    className="input input-bordered w-full mb-2"
+                  />
+                </label>
+                <div className="text-error text-sm absolute top-1 right-0">
                   <ErrorMessage name="phone" />
                 </div>
               </div>
-              <Field
-                placeholder="başında 0 olmadan giriniz: (5xx)"
-                type="number"
-                name="phone"
-                className="input input-bordered w-full mb-2"
-              />
 
-              <div className="flex justify-between items-end">
-                <label>Yaş</label>
-                <div className="text-error text-sm">
+              <div className="relative">
+                <label>
+                  Yaş
+                  <Field
+                    type="number"
+                    name="age"
+                    className="input input-bordered w-full mb-2"
+                  />
+                </label>
+                <div className="text-error text-sm absolute top-1 right-0">
                   <ErrorMessage name="age" />
                 </div>
               </div>
-              <Field
-                type="number"
-                name="age"
-                className="input input-bordered w-full mb-2"
-              />
 
               <div className="flex justify-center space-x-2">
                 <button className="btn btn-ghost" type="reset">
