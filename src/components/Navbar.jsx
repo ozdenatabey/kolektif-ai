@@ -43,7 +43,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link scroll={(el) => scrollWithOffset(el)} to="/#news">
-                Haberler
+                Geçmiş Etkinlikler
               </Link>
             </li>
           </ul>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link scroll={(el) => scrollWithOffset(el)} to="/#news">
-              Haberler
+              Geçmiş Etkinlikler
             </Link>
           </li>
         </ul>
@@ -88,9 +88,24 @@ export default function Navbar() {
             tabIndex={0}
             className="dropdown-content dropdown-end card card-compact bg-base-200 text-primary-content z-[1] w-80 md:w-96 p-2 shadow-lg mt-2 border-l-4 border-neutral"
           >
-            <div className="card-body">
+            <div className="p-3">
               <h3 className="card-title mb-2">İletişim Kanallarımız</h3>
-              <div className="flex items-start text-lg my-2">
+              <div className="flex items-start text-lg my-2 hover:underline">
+                <div>
+                  <MapPinIcon className="size-7 mr-2 text-neutral" />
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/p5jGVe98vSPPH1tRA"
+                  target="_blank"
+                >
+                  <span className="underline font-semibold decoration-error">
+                    MMO İstanbul Şube
+                  </span>
+                  <br />
+                  Katip Mustafa Çelebi, İpek Sk. No:9, 34433 Beyoğlu/İstanbul
+                </a>
+              </div>
+              <div className="flex items-start text-lg my-2 hover:underline">
                 <div>
                   <MapPinIcon className="size-7 mr-2 text-neutral" />
                 </div>
@@ -98,16 +113,35 @@ export default function Navbar() {
                   href="https://maps.app.goo.gl/h9CUaZXFiT3uLZGi8"
                   target="_blank"
                 >
+                  <span className="underline font-semibold decoration-error">
+                    Makina Hangar
+                  </span>
+                  <br />
                   Yakacık Çarşı Mah, Kartal Cd No:90/92, 34876 Kartal/İstanbul
                 </a>
               </div>
-              <div className="flex items-start text-lg my-2">
+              <div className="flex items-start text-lg my-2 hover:underline">
+                <div>
+                  <MapPinIcon className="size-7 mr-2 text-neutral" />
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/z2HD7APuneq1R1Hx8"
+                  target="_blank"
+                >
+                  <span className="underline font-semibold decoration-error">
+                    TAKSAV
+                  </span>
+                  <br />
+                  Caferağa, Bademaltı Sk. No:31, 34710 Kadıköy/İstanbul
+                </a>
+              </div>
+              <div className="flex items-start text-lg my-2 hover:underline">
                 <div>
                   <PhoneIcon className="size-7 mr-2 text-neutral" />
                 </div>
                 <a href="tel:+902123346976">+902123346976</a>
               </div>
-              <div className="flex items-start text-lg my-2">
+              <div className="flex items-start text-lg my-2 hover:underline">
                 <div>
                   <EnvelopeIcon className="size-7 mr-2 text-neutral" />
                 </div>
