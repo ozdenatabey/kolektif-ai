@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about" className="w-11/12 md:w-4/5 lg:w-4/6 m-auto">
+    <div id="about" className="w-11/12 md:w-4/5 m-auto">
       <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error my-6">
         Hakkımızda
       </p>

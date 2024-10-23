@@ -11,6 +11,20 @@ function Hero() {
           </span>
         </div>
       </div>
+
+      <div className="mt-4 w-11/12 md:w-4/5 text-center">
+        <p className="font-hero md:text-2xl lg:text-3xl">
+          Şu ana kadar{" "}
+          <span className="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent font-bold">
+            222 Kişi
+          </span>
+          &apos;nin katılımı ile{" "}
+          <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent font-bold">
+            12 Adet
+          </span>{" "}
+          eğitimi tamamladık.
+        </p>
+      </div>
     </div>
   );
 }
