@@ -10,11 +10,11 @@ function Events() {
         Yaklaşan Etkinlikler
       </p>
       <div
-        className={`grid gap-8 m-auto lg:${gridCalc.colWidthLg} lg:${gridCalc.colCountLg} md:${gridCalc.colWidthMd} md:${gridCalc.colCountMd} sm:w-[24rem]`}
+        className={`grid gap-8 m-auto lg:${gridCalc.colWidthLg} lg:${gridCalc.colCountLg} md:${gridCalc.colWidthMd} md:${gridCalc.colCountMd} sm:w-[22rem]`}
       >
         {events.map((event) => (
           <div key={event.id} className="">
-            <div className="card bg-base-100 w-96 h-full border border-neutral-content shadow-xl">
+            <div className="card bg-base-100 w-[22rem] h-full border border-neutral-content shadow-xl">
               <figure className="h-48">
                 <div>
                   <img
