@@ -17,6 +17,7 @@ export default {
     },
     fontFamily: {
       sans: ["IBM Plex Mono", "Arial", "sans-serif"],
+      hero: ["Public Sans", "Arial"],
     },
     extend: {},
   },

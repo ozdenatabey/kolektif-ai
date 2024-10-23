@@ -1,39 +1,45 @@
 function About() {
   return (
-    <div id="about" className="w-4/6 m-auto">
+    <div id="about" className="w-11/12 md:w-4/5 lg:w-4/6 m-auto">
       <p className="text-xl font-bold text-center underline underline-offset-4 decoration-error my-6">
         Hakkımızda
       </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
-        cupiditate officia corporis, aspernatur voluptates numquam ab tempora
-        molestias consequuntur quo enim quae, libero consectetur ex nihil!
-        Inventore, quae commodi! Distinctio porro suscipit tenetur et. Nulla,
-        excepturi explicabo! Nemo deserunt numquam aut laudantium est nihil, qui
-        dolorem quaerat nam molestias vero magnam nobis, adipisci dolore
-        corporis quos earum esse blanditiis expedita possimus cupiditate
-        reprehenderit quam iusto sit! Cupiditate eaque sit in aspernatur
-        corporis quod consequuntur delectus autem at accusamus atque saepe
-        quibusdam dolorum nam dolores ex animi iusto, consectetur porro.
-        Voluptatibus id perspiciatis animi fugiat eveniet cum reprehenderit
-        distinctio! Eligendi atque nobis minus ipsam error enim odit id, dolorem
-        laborum aspernatur eveniet quod nemo natus soluta et laboriosam beatae
-        nihil similique perferendis dolores. Iusto fugit aperiam quis tempora
-        reprehenderit amet et magni sed porro, nisi autem pariatur eaque eveniet
-        blanditiis, soluta, dignissimos ut sint? Ab eveniet porro unde
-        aspernatur ipsam nobis eaque, cum quidem libero rerum. Illo id totam ad
-        rem porro! Accusantium porro itaque eaque! Minus nostrum velit maxime
-        voluptatum? Dolores veniam nam omnis harum voluptatibus odit assumenda
-        asperiores sequi quas quae dolorum tenetur obcaecati, similique fuga
-        necessitatibus, incidunt maxime cumque fugit adipisci unde nobis
-        suscipit exercitationem vitae corrupti! Obcaecati aliquam repellendus
-        dicta et, qui deleniti laudantium laboriosam nihil odio in provident
-        rerum consequuntur atque quaerat quibusdam a, quidem natus quas
-        molestias tempore? Vitae, magnam cumque, molestiae tempora odio
-        consequuntur eius quasi, porro repellendus necessitatibus sequi facilis
-        neque laudantium praesentium illum doloremque quia? Architecto saepe
-        nemo exercitationem explicabo itaque necessitatibus?
-      </p>
+      <div className="w-full bg-gradient-to-tr from-sky-500 to-emerald-500 p-2 rounded-3xl">
+        <div className="bg-base-100 rounded-2xl p-3">
+          <p>
+            <strong>Kolektif.ai,</strong> 2023 yılında TMMOB Makina Mühendisleri
+            Odası İstanbul Şubesi Yapay Zeka Çalışma Grubu öncülüğünde
+            kurularak, bilim ve teknolojiyi toplumsal fayda amacıyla kullanmayı
+            hedefleyen bir komünite olarak yoluna başlamıştır. Komünite,
+            alanında uzmanlaşmak isteyen ya da yapay zeka alanına yeni başlayan
+            bireyler için bir dayanışma ağı olarak tasarlanmıştır. Üyeler,
+            karşılıklı bilgi ve tecrübe paylaşımında bulunarak birbirlerinin
+            gelişimine katkı sağlar, sürdürülebilir ve yenilikçi projeler
+            geliştirir.
+          </p>
+          <br />
+          <p>
+            <strong>Kolektif.ai,</strong> öğrenmeyi ve öğretmeyi merkeze alarak,
+            her bir üyesinin potansiyelini tam anlamıyla kullanabilmesi için
+            gerekli ortamı sağlar. Böylece, teknoloji ve mühendislik alanlarında
+            toplumsal fayda odaklı çözümler üretebilen, etik değerlere bağlı ve
+            yaratıcı bireyler gelişimine katkı sağlar. Rekabetin yerini
+            dayanışma, işbirliği ve kolektif gelişim almıştır.
+          </p>
+          <br />
+          <p>
+            <strong>Kolektif.ai,</strong> bu ilkeler doğrultusunda, tüm
+            üyelerini bireysel başarı yerine ortak hedeflere odaklanmaya teşvik
+            eder. Topluluk, çıkar odaklı olmayan yapısıyla, bilgiyi paylaşmanın
+            ve birlikte çalışmanın getirdiği gücü ön plana çıkarır. Gönüllülük
+            esası üzerine kurulan bu topluluk, her bir üyesinin katkılarıyla
+            şekillenir. Üyeler, kendi yetenek ve ilgi alanlarına göre projelerde
+            yer alır, yeni yetenekler edinir ve sosyal fayda projeleri
+            geliştirerek bilimi ve tekniği toplum çıkarları doğrultusunda
+            kullanırlar.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

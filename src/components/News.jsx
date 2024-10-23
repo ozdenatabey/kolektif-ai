@@ -11,7 +11,7 @@ function News() {
         {news.map((haber) => (
           <div
             key={haber.id}
-            className="flex rounded-lg overflow-hidden bg-base-100 shadow-xl h-48 hover:bg-base-300"
+            className="flex rounded-lg overflow-hidden bg-base-100 shadow-xl h-48 hover:bg-base-300 border-2 border-gray-300"
           >
             <div className="w-1/5">
               <img className=" h-full" src={haber.img} />
