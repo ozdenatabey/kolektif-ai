@@ -22,12 +22,12 @@ function News() {
                   <div>
                     <p className="font-semibold">Tarih:</p>
                     <p className="font-semibold">Eğitmen:</p>
-                    <p className="font-semibold">Katılımcı Sayısı:</p>
+                    {/*<p className="font-semibold">Katılımcı Sayısı:</p>*/}
                   </div>
                   <div>
                     <p>{haber.date}</p>
                     <p>{haber.constructor}</p>
-                    <p>{haber.number}</p>
+                    {/*<p>{haber.number}</p>*/}
                   </div>
                 </div>
               </div>
