@@ -122,21 +122,6 @@ export default function Navbar() {
               </div>
               <div className="flex items-start text-lg my-2 hover:underline">
                 <div>
-                  <MapPinIcon className="size-7 mr-2 text-neutral" />
-                </div>
-                <a
-                  href="https://maps.app.goo.gl/z2HD7APuneq1R1Hx8"
-                  target="_blank"
-                >
-                  <span className="underline font-semibold decoration-error">
-                    TAKSAV
-                  </span>
-                  <br />
-                  Caferağa, Bademaltı Sk. No:31, 34710 Kadıköy/İstanbul
-                </a>
-              </div>
-              <div className="flex items-start text-lg my-2 hover:underline">
-                <div>
                   <PhoneIcon className="size-7 mr-2 text-neutral" />
                 </div>
                 <a href="tel:+902123346976">+902123346976</a>
